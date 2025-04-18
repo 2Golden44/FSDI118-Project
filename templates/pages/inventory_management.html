@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Product Inventory - Golden Technology Inc.{% endblock %}
+
+{% block content %}
+  <section class="inventory-section" style="background-color: #f8f9fa; padding: 40px;">
+    <div class="container" style="max-width: 1000px; margin: auto; text-align: center;">
+      <h1 style="color: #2c3e50;">Product Inventory</h1>
+      <p style="color: #555; font-size: 18px;">Manage your products efficiently with Golden Technology Inc.'s advanced inventory system.</p>
+      
+      <h2 style="color: #2980b9;">Our Inventory Features</h2>
+      <ul style="list-style-type: none; padding: 0;">
+        <li style="color: #555; font-size: 18px; padding: 5px;">📦 Real-time stock tracking</li>
+        <li style="color: #555; font-size: 18px; padding: 5px;">🔍 Advanced search and filtering</li>
+        <li style="color: #555; font-size: 18px; padding: 5px;">📊 Detailed analytics and reporting</li>
+        <li style="color: #555; font-size: 18px; padding: 5px;">🔄 Automated restocking alerts</li>
+        <li style="color: #555; font-size: 18px; padding: 5px;">🔗 Seamless integration with e-commerce platforms</li>
+      </ul>
+      
+      <h2 style="color: #2980b9;">Current Inventory</h2>
+      <table style="width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff;">
+        <tr style="background: #2980b9; color: white;">
+          <th style="padding: 10px; border: 1px solid #ddd;">Product Name</th>
+          <th style="padding: 10px; border: 1px solid #ddd;">Category</th>
+          <th style="padding: 10px; border: 1px solid #ddd;">Stock</th>
+          <th style="padding: 10px; border: 1px solid #ddd;">Price</th>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ddd;">Wireless Keyboard</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">Accessories</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">150</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">$45.99</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ddd;">Gaming Laptop</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">Electronics</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">75</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">$1299.99</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ddd;">Noise Cancelling Headphones</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">Audio</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">200</td>
+          <td style="padding: 10px; border: 1px solid #ddd;">$199.99</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+{% endblock %}

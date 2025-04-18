@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Golden Technologies Inc.</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #1e3c72;
+        }
+        p {
+            text-align: center;
+            color: #555;
+            font-size: 18px;
+        }
+        .contact-details {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .contact-details p {
+            margin: 8px 0;
+            font-weight: bold;
+            color: #2a5298;
+        }
+        .contact-form {
+            margin-top: 30px;
+        }
+        label {
+            font-weight: bold;
+            color: #1e3c72;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 2px solid #2a5298;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background: #2a5298;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+        button:hover {
+            background: #1e3c72;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Reach out to us using the form below or contact us directly.</p>
+
+        <div class="contact-details">
+            <p><strong>Golden Technology Inc.</strong></p>
+            <p>Email: contact@goldentech.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Marine Drive, Destin, FL 32541</p>
+        </div>
+
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

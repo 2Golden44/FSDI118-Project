@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Golden Technology Inc. - Innovating the Future
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <style>
+        /* Full-page background image */
+        body {
+            background: url("{% static 'img/Future Tech Image.jpeg' %}") no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        /* Overlay for readability */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+            z-index: 0;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 100px 20px;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Adds spacing between buttons */
+    margin-top: 20px;
+}
+
+.btn {
+    width: 200px; /* Ensures uniform button width */
+    text-align: center;
+}
+
+
+        .primary-btn:hover {
+            background: #d39e00;
+        }
+
+        .secondary-btn {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            background: white;
+            color: black;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    
+    <div class="hero">
+        <h1>Innovating the Future with Cutting-Edge Technology</h1>
+        <p>Empowering businesses with AI, Cloud Computing, and Cybersecurity solutions.</p>
+        
+        <div class="button-container">
+            <a href="{% url 'about' %}" class="btn primary-btn">Learn More</a>
+            <a href="{% url 'contact' %}" class="btn secondary-btn">Get in Touch</a>
+            <a href="{% url 'post_list' %}" class="btn secondary-btn">View Posts</a>
+        </div>
+    </div>
+    
+
+    <section class="services">
+        <h2>Our Expertise</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <img src="{% static 'img/ai-icon.png' %}" alt="AI Solutions">
+                <h3>Artificial Intelligence</h3>
+                <p>Leveraging AI to automate and optimize business operations.</p>
+            </div>
+            <div class="service-card">
+                <img src="{% static 'img/cloud-icon.png' %}" alt="Cloud Computing">
+                <h3>Cloud Computing</h3>
+                <p>Secure, scalable, and efficient cloud solutions for enterprises.</p>
+            </div>
+            <div class="service-card">
+                <img src="{% static 'img/security-icon.png' %}" alt="Cybersecurity">
+                <h3>Cybersecurity</h3>
+                <p>Protecting your data and infrastructure from digital threats.</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
